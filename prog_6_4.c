@@ -4,25 +4,24 @@
 #include <stdio.h>
 
 int factorial(int n);
-int fact;
 int main()
 {
     int n;
     printf("Input factorial count --->");
-    scanf("%d",&n);
-    printf("n!=%d\n",factorial(n));
+    scanf("%d", &n);
+    printf("n!=%d\n", factorial(n));
     return 0;
 }
 int factorial(int n)
 {
-    if (n==0)
+    int fact;
+    if (n == 0)
     {
-     return 1;
-      
+        return 1;
     }
-    
-    else{
-        fact =n*factorial(n);
-         ;;
+    else
+    {
+        fact = n * factorial(n-1);
     }
+    return fact;
 }
