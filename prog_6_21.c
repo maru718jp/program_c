@@ -1,5 +1,6 @@
 /*
 prog_6_21.c
+    値渡し
 */
 #include <stdio.h>
 int sum(int x,int y);
